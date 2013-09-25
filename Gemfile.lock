@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/FriendlyId/friendly_id.git
+  revision: 637ec7d62a56fc81dcc141ce2d1c287fa4b40055
+  branch: master
+  specs:
+    friendly_id (5.0.0.rc2)
+      activerecord (~> 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,6 +78,7 @@ GEM
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -144,8 +153,10 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   devise
+  friendly_id!
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.0)
   rspec-rails (>= 2.0.1)
   sass-rails (~> 4.0.0)
