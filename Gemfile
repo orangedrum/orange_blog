@@ -50,6 +50,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Image Upload manager
+gem "paperclip", "~> 3.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
