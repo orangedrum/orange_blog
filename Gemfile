@@ -53,6 +53,10 @@ end
 # Image Upload manager
 gem "paperclip", "~> 3.0"
 
+gem 'protected_attributes', '1.0.1'
+
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

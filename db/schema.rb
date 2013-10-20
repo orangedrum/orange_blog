@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130925230503) do
+ActiveRecord::Schema.define(version: 20131020024729) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20130925230503) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "posts", ["slug"], name: "index_posts_on_slug"
