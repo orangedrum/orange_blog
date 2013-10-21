@@ -51,7 +51,7 @@ group :doc do
 end
 
 # Image Upload manager
-gem "paperclip", "~> 3.0"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem 'protected_attributes', '1.0.1'
 

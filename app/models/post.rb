@@ -4,10 +4,10 @@ class Post < ActiveRecord::Base
 
 	validates :title, uniqueness: true
 	validates :body, presence: true
+	validates :image, presence: true
 
+	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
 	attr_accessible :image
-	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
-	validates :image, :attachment_presence => true
 
 	attr_accessible :title
 	attr_accessible :body
